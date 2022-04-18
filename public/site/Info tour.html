@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="vn">
+<head>
+	<title>INFO TOUR</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!--MEIDA VIEWPORT-->
+
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<script  src="jquery/jquery-3.4.1.min.js"></script>
+	<link rel="stylesheet" href="owlcarousel/css/owl.carousel.min.css"><!--LIBRARY-->
+
+	<link rel="stylesheet" href="css/style-info-tour.css"><!--CSS-->
+
+	<link rel="stylesheet" href="font/fontawesome-pro-5.12.0-web/css/all.css">
+	<link rel="stylesheet" type="text/css" href="font/font-bigmug-line/font/flaticon.css"><!--FONT-->
+
+	<script  src="js/window-scroll-info-tour.js"></script><!--WINDOW SCROLL-->
+	
+</head>
+<body>
+	<header>
+		<!----------------------------------------------------------MENU TOGGLE----------------------------------------------->
+		<div id="overlay"></div><!--OVERLAY-->
+		<div class="container-toggle-menu">
+			<div class="button-kebap">
+				<span class="btn-1" ></span>
+				<span class="btn-2"></span>
+				<span class="btn-3"></span>
+			</div><!--BUTTON TOGGLE RIGHT-->
+			
+			<div class="menu-btn">
+				<span class="top"></span>
+				<span class="mid"></span>
+				<span class="bot"></span>
+			</div><!--BUTTON TOGGLE LEFT-->
+			<div id="nav-aside-left">
+				<ul class="nav-inner">
+					<li class="nav-inner-item-contact">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-google-plus-g"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+					</li>
+					<li class="nav-inner-item line"><dir class="nav-inner-line"></dir></li>
+					<li class="nav-inner-item active"><a href="#">Home</a></li>
+					<li class="nav-inner-item"><a href="#">Destinations</a></li>
+					<li class="nav-inner-item"><a href="#">Travel Styles</a></li>
+					<li class="nav-inner-item"><a href="#">Gallery</a></li>
+					<li class="nav-inner-item"><a href="#">Deals</a></li>
+					<li class="nav-inner-item"><a href="#">Contact Us</a></li>
+				</ul>
+			</div><!--NAVBAR TOGGLE LEFT-->
+		</div>
+		<div id="nav-aside-right" class="s-closed">
+			<div class="container-nav-aside-right ">
+				<input type="text" placeholder="Where do you go...">
+				<div class="text-select"><p>Select month:</p></div>
+				<select class="dropdown"  >
+					<option>&emsp;&emsp;January</option>
+					<option >&emsp;&emsp;February</option>
+					<option >&emsp;&emsp;March</option>
+					<option >&emsp;&emsp;April</option>
+					<option >&emsp;&emsp;May</option>
+					<option >&emsp;&emsp;June</option>
+					<option >&emsp;&emsp;July</option>
+					<option >&emsp;&emsp;August</option>
+					<option >&emsp;&emsp;September</option>
+					<option >&emsp;&emsp;October</option>
+					<option >&emsp;&emsp;November</option>
+					<option >&emsp;&emsp;December</option>
+				</select>
+				<button class="btn btn-success" type="submit">Search Tour</button>
+			</div>
+		</div><!--NAVBAR TOGGLE RIGHT-->
+		<div id="nav-on">
+			<div class="container-menu-show container">
+				<div class="container-logo col-lg-3">
+					<a href="#">
+						<img src="image/logo.png" height="40px" width="133px">
+					</a>
+				</div>
+				<div class="container-option col-lg-9">
+					<input type="text" placeholder="Where do you go...">
+					<div class="text-select"><p>Select month:</p></div>
+					<select class="dropdown"  >
+						<option>&emsp;&emsp;January</option>
+						<option >&emsp;&emsp;February</option>
+						<option >&emsp;&emsp;March</option>
+						<option >&emsp;&emsp;April</option>
+						<option >&emsp;&emsp;May</option>
+						<option >&emsp;&emsp;June</option>
+						<option >&emsp;&emsp;July</option>
+						<option >&emsp;&emsp;August</option>
+						<option >&emsp;&emsp;September</option>
+						<option >&emsp;&emsp;October</option>
+						<option >&emsp;&emsp;November</option>
+						<option >&emsp;&emsp;December</option>
+					</select>
+					<div class="menu-show-line"></div>
+					<button class="btn btn-success" type="submit">Search Tour</button>
+				</div>
+			</div><!--NAVBAR ON-->
+		</div>
+		<div id="nav-below">
+			<div class ="container-menu-below container">
+				<nav  class="navbar navbar-expand-md bg-blue navbar-dark" >
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link"  href="#">Destinations</a>
+							<div class="dropdown-content">
+								<a href="#">About 1</a>
+								<a href="#">About 2</a>
+								<a href="#">About 3</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Travel Styles</a>
+							<div class="dropdown-content">
+								<a href="#">Our Tours 1</a>
+								<a href="#">Our Tours 2</a>
+								<a href="#">Our Tours 3</a>
+							</div>
+						</li> 
+						<li class="nav-item">
+							<a class="nav-link" href="#">Gallery</a>
+						</li> 
+						<li class="nav-item">
+							<a class="nav-link" href="#">Deals</a>
+							<div class="dropdown-content">
+								<a href="#">Blogs</a>
+							</div>
+						</li> 
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contact Us</a>
+						</li>
+					</ul>
+					<div class="container-icon-sign-up">
+						<li class="icon-sign-up"><a href="#">Sign In<i class="fas fa-sign-in-alt"></i></a></li>
+					</div>
+				</nav>
+			</div>
+		</div><!--NAVBAR BELOW-->
+	</header>
+	<!-------------------------------------------------BOOK TOUR------------------------------------------------------>
+	<section class="testimonials container" id="testimonials">
+		<div id="customers-testimonials" class="owl-carousel col-lg-7">
+			<!--TESTIMONIAL 1 -->
+			<div class="item">
+				<div class="shadow-effect">
+					<img class="img-responsive" src="image/photo-1527577440030-436a36b07401.jpg" alt="" >
+				</div>
+			</div>
+			<!--TESTIMONIAL 2 -->
+			<div class="item">
+				<div class="shadow-effect">
+					<img class="img-responsive" src="image/photo-1473090731544-e0402eb455de.jpg" alt=" ">
+				</div>
+			</div>
+			<!--TESTIMONIAL 3 -->
+			<div class="item">
+				<div class="shadow-effect">
+					<img class="img-responsive" src="image/photo-1503764654157-72d979d9af2f.jpg" alt="" ">
+				</div>
+			</div>
+			<!--TESTIMONIAL 4 -->
+			<div class="item">
+				<div class="shadow-effect">
+					<img class="img-responsive" src="image/photo-1526139334526-f591a54b477c.jpg" alt="" ">
+				</div>
+			</div>
+			<!--TESTIMONIAL 5 -->
+			<div class="item">
+				<div class="shadow-effect">
+					<img class="img-responsive" src="image/photo-1486056997767-09578eee7de1.jpg" alt="" >
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="tour-detail" class="col-lg-5">
+		<div class="container-tour-detail">
+			<p class="day-detail">12 DAYS</p>
+			<h2>Vietnam Experience</h2>
+			<p>From <strong> HO CHI MINH City</strong> to <strong>HA NOI</strong></p>
+			<div class="planing-your-tour">
+				<p class="col-lg-6"><i class="fal fa-sign"></i><strong>&nbsp;&nbsp;Tour Operator:</strong> Contiki</p>
+				<p class="col-lg-6"><i class="fal fa-users"></i><strong>&nbsp;&nbsp;Max group size:</strong> 30</p>
+			</div>
+			<div class="planing-your-tour">
+				<p class="col-lg-6"><i class="fal fa-user-plus"></i><strong>&nbsp;&nbsp;Age range:</strong> 18 to 35</p>
+				<p class="col-lg-6"><i class="fal fa-comment"></i> <strong>&nbsp;&nbsp;Operated in:</strong> English</p>
+			</div>
+			<p class="col-lg-12"><i class="fal fa-ticket"></i> <strong>&nbsp;&nbsp;Tour id:</strong> 4786</p>
+			<div class="price-book-tour">
+				<p class="price-tour">From $1,435</p> 
+				<p class="price-discount">-15%</p>
+
+			</div>
+			<h1><strong>US $1,220</strong></h1>
+		</div>
+	</div>
+</section>
+<!-------------------------------------------------ITINERARY------------------------------------------------------>
+<div class="container-itinerary container">
+	<div class="start-planning-your-tour">
+		<p class="col-lg-4"><i class="fab fa-telegram-plane">&nbsp;&nbsp;</i>Start planning your tour</p>
+		<p class="col-lg-4"><i class="fas fa-download"></i>&nbsp;&nbsp;Download brochure</p>
+		<p class="col-lg-4"><i class="fas fa-comments-alt"></i>&nbsp;&nbsp;Ask a Question</p>
+	</div>
+	<h3>Places You’ll See</h3>
+	<div class="image-place">
+		<div id="container-image-place" class="owl-carousel">
+			<!--TESTIMONIAL 1 -->
+			<div class="item">
+				<div class="shadow-effect">
+					<img class="img-responsive" src="image/photo-1555980483-93e7b3529e1a.jpg" alt="" ">
+				</div>
+			</div>
+			<!--TESTIMONIAL 2 -->
+			<div class="item">
+				<div class="shadow-effect">
+					<img class="img-responsive" src="image/photo-1533497394934-b33cd9695ba9.jpg" alt="" ">
+				</div>
+			</div>
+			<!--TESTIMONIAL 3 -->
+			<div class="item">
+				<div class="shadow-effect">
+					<img class="img-responsive" src="image/photo-1528127269322-539801943592.jpg" alt="" ">
+				</div>
+			</div>
+			<!--TESTIMONIAL 4 -->
+			<div class="item">
+				<div class="shadow-effect">
+					<img class="img-responsive" src="image/photo-1503764654157-72d979d9af2f.jpg" alt="" ">
+				</div>
+			</div>
+			<!--TESTIMONIAL 5 -->
+			<div class="item">
+				<div class="shadow-effect">
+					<img class="img-responsive" src="image/photo-1527577440030-436a36b07401.jpg" alt="" >
+				</div>
+			</div>
+		</div>
+	</div>
+	<h3>Itinerary</h3>
+	<p>Start in Ho Chi Minh City and end in Hanoi! With the discovery tour Vietnam Experience, you have a 12 day tour package taking you through Ho Chi Minh City, Vietnam and 6 other destinations in Vietnam. Vietnam Experience includes accommodation in a hotel as well as an expert guide, meals, transport and more.</p>
+	<div id="accordion" class="col-7">
+		<div class="card">
+			<div class="card-header">
+				<a class="card-link" data-toggle="collapse" href="#collapseOne">
+					<i class="fas fa-info-circle"></i>Introduction<i class="fas fa-angle-down"></i>
+				</a>
+			</div>
+			<div id="collapseOne" class="collapse " data-parent="#accordion">
+				<div class="card-body">
+					Looking for the full experience tour of Vietnam? This trip takes you through Ho Chi Minh, Hoi An, Hanoi & Halong Bay with plenty of action and highlights to immerse yourself into this enchanting culture. Picture yourself relishing the rice region of Mekong Delta by taking a traditional boat through floating markets & local fruit farms, stopping in exciting & iconic hot spots & popular local foodie haunts for a true Vietnam experience.
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+				<a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+					<i class="fas fa-map-marker-alt"></i>Day 1: Arrive Ho Chi Minh City<i class="fas fa-angle-down"></i>
+				</a>
+			</div>
+			<div id="collapseTwo" class="collapse" data-parent="#accordion">
+				<div class="card-body">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+				<a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+					<i class="far fa-calendar-minus"></i>Day 2: Ho Chi Minh City to Mekong Delta<i class="fas fa-angle-down"></i>
+				</a>
+			</div>
+			<div id="collapseThree" class="collapse" data-parent="#accordion">
+				<div class="card-body">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+				<a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+					<i class="far fa-calendar-minus"></i>Day 3: Mekong Delta to Ho Chi Minh City<i class="fas fa-angle-down"></i>
+				</a>
+			</div>
+			<div id="collapseFour" class="collapse" data-parent="#accordion">
+				<div class="card-body">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+				<a class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
+					<i class="far fa-calendar-minus"></i>Day 4: Ho Chi Minh City to Nha Trang<i class="fas fa-angle-down"></i>
+				</a>
+			</div>
+			<div id="collapseFive" class="collapse" data-parent="#accordion">
+				<div class="card-body">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+				<a class="collapsed card-link" data-toggle="collapse" href="#collapseSix">
+					<i class="far fa-calendar-minus"></i>Day 5: Hanoi to Halong Bay<i class="fas fa-angle-down"></i>
+				</a>
+			</div>
+			<div id="collapseSix" class="collapse" data-parent="#accordion">
+				<div class="card-body">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+				<a class="collapsed card-link" data-toggle="collapse" href="#collapseSeven">
+					<i class="fas fa-pennant"></i>Day 6: Depart Hanoi<i class="fas fa-angle-down"></i>
+				</a>
+			</div>
+			<div id="collapseSeven" class="collapse" data-parent="#accordion">
+				<div class="card-body">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div>
+			</div>
+		</div>
+	</div>
+	<h3>What's Included</h3>
+	<div id="accordion" class="col-7">
+		<div class="card">
+			<div class="card-header">
+				<a class="card-link" data-toggle="collapse" href="#collapseOne">
+					<i class="far fa-check-circle"></i>Accommodation<i class="fas fa-angle-down"></i>
+				</a>
+			</div>
+			<div id="collapseOne" class="collapse " data-parent="#accordion">
+				<div class="card-body">
+					Looking for the full experience tour of Vietnam? This trip takes you through Ho Chi Minh, Hoi An, Hanoi & Halong Bay with plenty of action and highlights to immerse yourself into this enchanting culture. Picture yourself relishing the rice region of Mekong Delta by taking a traditional boat through floating markets & local fruit farms, stopping in exciting & iconic hot spots & popular local foodie haunts for a true Vietnam experience.
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+				<a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+					<i class="far fa-check-circle"></i>Guide<i class="fas fa-angle-down"></i>
+				</a>
+			</div>
+			<div id="collapseTwo" class="collapse" data-parent="#accordion">
+				<div class="card-body">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+				<a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+					<i class="far fa-check-circle"></i>Meals<i class="fas fa-angle-down"></i>
+				</a>
+			</div>
+			<div id="collapseThree" class="collapse" data-parent="#accordion">
+				<div class="card-body">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+				<a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+					<i class="far fa-check-circle"></i>Transport<i class="fas fa-angle-down"></i>
+				</a>
+			</div>
+			<div id="collapseFour" class="collapse" data-parent="#accordion">
+				<div class="card-body">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+				<a class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
+					<i class="far fa-check-circle"></i>Additional Services<i class="fas fa-angle-down"></i>
+				</a>
+			</div>
+			<div id="collapseFive" class="collapse" data-parent="#accordion">
+				<div class="card-body">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+				<a class="collapsed card-link" data-toggle="collapse" href="#collapseSix">
+					<i class="far fa-times-circle"></i>Flights<i class="fas fa-angle-down"></i>
+				</a>
+			</div>
+			<div id="collapseSix" class="collapse" data-parent="#accordion">
+				<div class="card-body">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+				<a class="collapsed card-link" data-toggle="collapse" href="#collapseSeven">
+					<i class="far fa-times-circle"></i>Insurance<i class="fas fa-angle-down"></i>
+				</a>
+			</div>
+			<div id="collapseSeven" class="collapse" data-parent="#accordion">
+				<div class="card-body">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+				<a class="collapsed card-link" data-toggle="collapse" href="#collapseEight">
+					<i class="far fa-times-circle"></i>Additional Services<i class="fas fa-angle-down"></i>
+				</a>
+			</div>
+			<div id="collapseEight" class="collapse" data-parent="#accordion">
+				<div class="card-body">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<!-----------------------------------------------------CUSTOMER------------------------------------------------------>
+<div class="container container-customer">
+	<h3>Customer Photos</h3>
+	<div id="container-image-customer" class="owl-carousel">
+		<!--TESTIMONIAL 1 -->
+		<div class="item">
+			<div class="shadow-effect">
+				<img class="img-customer" src="image/photo-1522780300892-b25a6ec89734.jpg" alt="" ">
+			</div>
+		</div>
+		<!--TESTIMONIAL 2 -->
+		<div class="item">
+			<div class="shadow-effect">
+				<img class="img-customer" src="image/photo-1576863555490-b0025d04a7c3.jpg" alt="" ">
+			</div>
+		</div>
+		<!--TESTIMONIAL 3 -->
+		<div class="item">
+			<div class="shadow-effect">
+				<img class="img-customer" src="image/photo-1486056997767-09578eee7de1.jpg" alt="" ">
+			</div>
+		</div>
+		<!--TESTIMONIAL 4 -->
+		<div class="item">
+			<div class="shadow-effect">
+				<img class="img-customer" src="image/photo-1494832944834-a08818c634b0.jpg" alt="" ">
+			</div>
+		</div>
+		<!--TESTIMONIAL 5 -->
+		<div class="item">
+			<div class="shadow-effect">
+				<img class="img-customer" src="image/photo-1506917980821-213681597089.jpg" alt="" >
+			</div>
+		</div>
+	</div>
+	<h3>Customer Reviews</h3>
+	<div class="tour-reviews col-7">
+		<div class="col-12 container-overall-rating">
+			<div class="col-6 container-rating-list-item">
+				<i class="fal fa-list-alt col-1"></i>
+				<div class="container-overview-title col-8">
+					<p class="main-title">Itinerary</p>
+					<p>Excellent</p>
+				</div>
+				<div class="col-2">
+				</div>
+			</div>
+			<div class="col-6 container-rating-list-item">
+				<i class="col-1"></i>
+				<div class="container-overview-title col-8">
+					<p class="main-title"></p>
+					<p></p>
+				</div>
+				<div class="container-star-rating col-2">
+					<p>4.8</p>
+					<i class="fas fa-star"></i>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 container-list-rating">
+			<div class="col-6 container-rating-list-item">
+				<i class="fal fa-list-alt col-1"></i>
+				<div class="container-overview-title col-8">
+					<p class="main-title">Itinerary</p>
+					<p>Excellent</p>
+				</div>
+				<div class="container-star-rating col-2">
+					<p>4.8</p>
+					<i class="fas fa-star"></i>
+				</div>
+			</div>
+
+			<div class="col-6 container-rating-list-item">
+				
+				<i class="fas fa-hat-cowboy col-1"></i>
+				<div class="container-overview-title col-8">
+					<p class="main-title">Guide</p>
+					<p>Excellent</p>
+				</div>
+				<div class="container-star-rating col-2">
+					<p>4.8</p>
+					<i class="fas fa-star"></i>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 container-list-rating">
+			<div class="col-6 container-rating-list-item">
+				<i class="fal fa-bus-alt col-1"></i>
+				<div class="container-overview-title col-8">
+					<p class="main-title">Transport</p>
+					<p>Excellent</p>
+				</div>
+				<div class="container-star-rating col-2">
+					<p>4.8</p>
+					<i class="fas fa-star"></i>
+				</div>
+			</div>
+
+			<div class="col-6 container-rating-list-item">
+				<i class="fas fa-bed col-1"></i>
+				<div class="container-overview-title col-8">
+					<p class="main-title">Accommodation</p>
+					<p>Excellent</p>
+				</div>
+				<div class="container-star-rating col-2">
+					<p>4.8</p>
+					<i class="fas fa-star"></i>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 container-list-rating">
+			<div class="col-6 container-rating-list-item">
+				<i class="fas fa-utensils col-1"></i>
+				<div class="container-overview-title col-8">
+					<p class="main-title">Food</p>
+					<p>Excellent</p>
+				</div>
+				<div class="container-star-rating col-2">
+					<p>4.8</p>
+					<i class="fas fa-star"></i>
+				</div>
+			</div>
+
+			<div class="col-6 container-rating-list-item">
+				<i class="fas fa-flag col-1"></i>
+				<div class="container-overview-title col-8">
+					<p class="main-title">Tour Operator</p>
+					<p>Excellent</p>
+				</div>
+				<div class="container-star-rating col-2">
+					<p>4.8</p>
+					<i class="fas fa-star"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-button-rating">
+		<button type="button" class="btn btn-outline-info btn-rating-active">Most Recent</button>
+		<button type="button" class="btn btn-outline-info">Most Popular</button>
+		<button type="button" class="btn btn-outline-info">Highest First</button>
+		<button type="button" class="btn btn-outline-info">Lowest First</button>
+	</div>
+</div>
+<!------------------------------------------TOUR AVAILABILITY---------------------------------------------------------->
+<div class="container container-tour-availability">
+	<h3>Availability</h3>
+	<h5>Upcoming departures</h5>
+	<div class="container-tour-availability-variant col-7">
+		<div class="tour-availability-variant">	
+			<p class="tour-availability-label">Get Instant Confirmation</p>
+			<p class="tour-availability-discount">20%</p>
+			<div class="col-3">
+				<p>Tuesday</p>
+				<p class="tour-availability-bold-text">Mar 10, 2020</p>
+			</div>
+			<div class="col-1"><i class="far fa-arrow-circle-right"></i></div>
+			<div class="col-3">
+				<p>Tuesday</p>
+				<p class="tour-availability-bold-text">Mar 17, 2020</p>
+			</div>
+			<div class="col-2">
+				<p class="tour-availability-discount-text">$799</p>
+				<p class="tour-availability-bold-text">$599</p>
+			</div>
+			<div class="col-3">
+				<button type="button" class="btn btn-success">Book Tour</button>
+			</div>
+		</div>
+		<div class="status-tour-availability-variant">
+			<div class="col-1">
+				<i class="fas fa-bell"></i>
+			</div>
+			<p>Almost Sold Out</p>
+		</div>
+	</div>
+	<div class="container-tour-availability-variant col-7">
+		<div class="tour-availability-variant">	
+			<p class="tour-availability-label">Get Instant Confirmation</p>
+			<div class="col-3">
+				<p>Tuesday</p>
+				<p class="tour-availability-bold-text">Mar 10, 2020</p>
+			</div>
+			<div class="col-1"><i class="far fa-arrow-circle-right"></i></div>
+			<div class="col-3">
+				<p>Tuesday</p>
+				<p class="tour-availability-bold-text">Mar 17, 2020</p>
+			</div>
+			<div class="col-2">
+				<p class="tour-availability-bold-text">$799</p>
+			</div>
+			<div class="col-3">
+				<button type="button" class="btn btn-success">Book Tour</button>
+			</div>
+		</div>
+		<div class="status-tour-availability-variant">
+			<div class="col-1">
+				<i class="fas fa-bell"></i>
+			</div>
+			<p>Almost Sold Out</p>
+		</div>
+	</div>
+	<div class="container-tour-availability-variant col-7">
+		<div class="tour-availability-variant">	
+			<p class="tour-availability-label">Get Instant Confirmation</p>
+			<div class="col-3">
+				<p>Tuesday</p>
+				<p class="tour-availability-bold-text">Mar 10, 2020</p>
+			</div>
+			<div class="col-1"><i class="far fa-arrow-circle-right"></i></div>
+			<div class="col-3">
+				<p>Tuesday</p>
+				<p class="tour-availability-bold-text">Mar 17, 2020</p>
+			</div>
+			<div class="col-2">
+				<p class="tour-availability-bold-text">$799</p>
+			</div>
+			<div class="col-3">
+				<button type="button" class="btn btn-success">Book Tour</button>
+			</div>
+		</div>
+		<div class="status-tour-availability-variant">
+			<div class="col-1">
+				<i class="fas fa-bell"></i>
+			</div>
+			<p>Almost Sold Out</p>
+		</div>
+	</div>
+	<div class="container-tour-availability-variant col-7">
+		<div class="tour-availability-variant">	
+			<p class="tour-availability-label">Get Instant Confirmation</p>
+			<div class="col-3">
+				<p>Friday</p>
+				<p class="tour-availability-bold-text">Mar 13, 2020</p>
+			</div>
+			<div class="col-1"><i class="far fa-arrow-circle-right"></i></div>
+			<div class="col-3">
+				<p>Friday</p>
+				<p class="tour-availability-bold-text">Mar 20, 2020</p>
+			</div>
+			<div class="col-2">
+				<p class="tour-availability-bold-text">$799</p>
+			</div>
+			<div class="col-3">
+				<button type="button" class="btn btn-success">Book Tour</button>
+			</div>
+		</div>
+		<div class="status-tour-availability-variant">
+			<div class="col-1">
+				<i class="fas fa-bell"></i>
+			</div>
+			<p>Almost Sold Out</p>
+		</div>
+	</div>
+</div>
+
+<!---------------------------------------------------FOOTER---------------------------------------------------------->
+<footer class="footer-corporate context-dark">
+	<div class="footer-corporate-inset">
+		<div class="container">
+			<div class="content-footer">
+				<div class="col-sm-6 col-md-12 col-lg-4 col-xl-4">
+					<div class="oh-desktop">
+						<h6 class="text-spacing-100 text-uppercase">Contact us</h6>
+						<ul class="footer-contacts">
+							<li>
+								<div class="unit-footer">
+									<div class="unit-left-footer"><span class="icon fa fa-phone"></span></div>
+									<div class="unit-body"><a class="link-phone" href="#">+036-282-3931</a></div>
+								</div>
+							</li>
+							<li>
+								<div class="unit-footer">
+									<div class="unit-left-footer"><span class="icon fa fa-envelope"></span></div>
+									<div class="unit-body"><a class="link-aemail" href="#">info@rocklee.org</a></div>
+								</div>
+							</li>
+							<li>
+								<div class="unit-footer">
+									<div class="unit-left-footer"><span class="icon fa fa-location-arrow"></span></div>
+									<div class="unit-body"><a class="link-location" href="#">TayNguyen University, BuonMaThuot, DakLak.</a></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-5 col-lg-4 col-xl-4">
+					<div class="oh-desktop">
+						<h6 class="text-spacing-100 text-uppercase">Popular news</h6>
+						<article class="post post-minimal-2">
+							<p class="post-minimal-2-title"><a href="#">Your Personal Guide to 5 Best Places to Visit on Earth</a></p>
+							<div class="post-minimal-2-time">
+								<time datetime="2018-05-04">February 14,2020</time>
+							</div>
+						</article>
+						<article class="post post-minimal-2">
+							<p class="post-minimal-2-title"><a href="#">Top 10 Hotels: Rating by Wonder Tour Travel Experts</a></p>
+							<div class="post-minimal-2-time">
+								<time datetime="2018-05-04"> February 14,2020</time>
+							</div>
+						</article>
+					</div>
+				</div>
+				<div class="col-sm-11 col-md-7 col-lg-4 col-xl-4">
+					<div class="oh-desktop">
+						<h6 class="text-spacing-100">Quick links</h6>
+						<ul class="row-6 list-0 list-marked list-marked-md list-marked-secondary list-custom-2">
+							<li><a href="#">Destinations</a></li>
+							<li><a href="#">Travel Styles</a></li>
+							<li><a href="#">Gallery</a></li>
+							<li><a href="#">Deals</a></li>
+							<li><a href="#">Contact Us</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer><!--FOOTER CONTRACT-->
+<div class="footer-corporate-bottom-panel">
+	<div class="container">
+		<div class=" justfy-content-xl-space-berween content-footer align-items-md-center2">
+			<div class="col-sm-6 col-md-4  text-sm-right text-md-center">
+				<div>
+					<ul class="list-inline list-inline-sm footer-social-list-2">
+						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4 order-sm-first">
+				<p class="rights"><span>©&nbsp;</span><span class="copyright-year">2020</span> <span>Tour Discover</span>. All rights reserved<span>.</span><span> Design&nbsp;by&nbsp;<a href="#">RockLee.</a></span>
+				</p>
+			</div>
+			<div class="col-sm-6 col-md-4 text-md-right">
+				<p class="rights"><a href="#">Privacy Policy</a></p>
+			</div>
+		</div>
+	</div>
+</div><!--FOOTER PANEL-->
+</body>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script  src="jquery/jquery-2.2.2.min.js"></script>
+<script  src="js/script-info-tour.js"></script>
+<script  src="owlcarousel/js/owl.carousel.min.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script  src="js/script-slider.js"></script>
+<script  src="js/script-toggle.js"></script>
+</html>

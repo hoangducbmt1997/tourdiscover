@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="vn">
+<head>
+	<title>HOME</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!--MEIDA VIEWPORT-->
+
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<script  src="jquery/jquery-3.4.1.min.js"></script>
+	<link rel="stylesheet" href="owlcarousel/css/owl.carousel.min.css"><!--LIBRARY-->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel='stylesheet' href='css/animate.css'>
+	<script src='js/wow.min.js'></script>
+
+	<link rel="stylesheet" href="font/fontawesome-pro-5.12.0-web/css/all.css">
+	<link rel="stylesheet" type="text/css" href="font/font-bigmug-line/font/flaticon.css"><!--FONT-->
+
+	<script  src="js/window-scroll.js"></script><!--WINDOW SCROLL-->
+	
+</head>
+<body>
+	<header>
+		<!----------------------------------------------------------MENU TOGGLE----------------------------------------------->
+		<div id="overlay"></div><!--OVERLAY-->
+		<div class="container-toggle-menu">
+			<div class="button-kebap">
+				<span class="btn-1" ></span>
+				<span class="btn-2"></span>
+				<span class="btn-3"></span>
+			</div><!--BUTTON TOGGLE RIGHT-->
+			
+			<div class="menu-btn">
+				<span class="top"></span>
+				<span class="mid"></span>
+				<span class="bot"></span>
+			</div><!--BUTTON TOGGLE LEFT-->
+			<div id="nav-aside-left">
+				<ul class="nav-inner">
+					<li class="nav-inner-item-contact">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-google-plus-g"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+					</li>
+					<li class="nav-inner-item line"><dir class="nav-inner-line"></dir></li>
+					<li class="nav-inner-item active"><a href="#">Home</a></li>
+					<li class="nav-inner-item"><a href="#">Destinations</a></li>
+					<li class="nav-inner-item"><a href="#">Travel Styles</a></li>
+					<li class="nav-inner-item"><a href="#">Gallery</a></li>
+					<li class="nav-inner-item"><a href="#">Deals</a></li>
+					<li class="nav-inner-item"><a href="#">Contact Us</a></li>
+				</ul>
+			</div><!--NAVBAR TOGGLE LEFT-->
+		</div>
+		<div id="nav-aside-right" class="s-closed">
+			<div class="container-nav-aside-right ">
+				<input type="text" placeholder="Where do you go...">
+				<div class="text-select"><p>Select month:</p></div>
+				<select class="dropdown"  >
+					<option>&emsp;&emsp;January</option>
+					<option >&emsp;&emsp;February</option>
+					<option >&emsp;&emsp;March</option>
+					<option >&emsp;&emsp;April</option>
+					<option >&emsp;&emsp;May</option>
+					<option >&emsp;&emsp;June</option>
+					<option >&emsp;&emsp;July</option>
+					<option >&emsp;&emsp;August</option>
+					<option >&emsp;&emsp;September</option>
+					<option >&emsp;&emsp;October</option>
+					<option >&emsp;&emsp;November</option>
+					<option >&emsp;&emsp;December</option>
+				</select>
+				<button class="btn btn-success" type="submit">Search Tour</button>
+			</div>
+		</div><!--NAVBAR TOGGLE RIGHT-->
+		<div id="nav-on">
+			<div class="container-menu-show container">
+				<div class="container-logo col-lg-3 ">
+					<a href="#">
+						<img src="image/logo.png" height="40px" width="133px">
+					</a>
+				</div>
+				<div class="container-option col-lg-9">
+					<input type="text" placeholder="Where do you go...">
+					<div class="text-select"><p>Select month:</p></div>
+					<select class="dropdown"  >
+						<option>&emsp;&emsp;January</option>
+						<option >&emsp;&emsp;February</option>
+						<option >&emsp;&emsp;March</option>
+						<option >&emsp;&emsp;April</option>
+						<option >&emsp;&emsp;May</option>
+						<option >&emsp;&emsp;June</option>
+						<option >&emsp;&emsp;July</option>
+						<option >&emsp;&emsp;August</option>
+						<option >&emsp;&emsp;September</option>
+						<option >&emsp;&emsp;October</option>
+						<option >&emsp;&emsp;November</option>
+						<option >&emsp;&emsp;December</option>
+					</select>
+					<div class="menu-show-line"></div>
+					<button class="btn btn-success" type="submit">Search Tour</button>
+				</div>
+			</div><!--NAVBAR ON-->
+		</div>
+		<div id="nav-below">
+			<div class ="container-menu-hide container">
+				<nav  class="navbar navbar-expand-md bg-blue navbar-dark" >
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link"  href="#">Destinations</a>
+							<div class="dropdown-content">
+								<a href="#">About 1</a>
+								<a href="#">About 2</a>
+								<a href="#">About 3</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Travel Styles</a>
+							<div class="dropdown-content">
+								<a href="#">Our Tours 1</a>
+								<a href="#">Our Tours 2</a>
+								<a href="#">Our Tours 3</a>
+							</div>
+						</li> 
+						<li class="nav-item">
+							<a class="nav-link" href="#">Gallery</a>
+						</li> 
+						<li class="nav-item">
+							<a class="nav-link" href="#">Deals</a>
+							<div class="dropdown-content">
+								<a href="#">Blogs</a>
+							</div>
+						</li> 
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contact Us</a>
+						</li>
+					</ul>
+					<div class="container-icon-sign-up">
+						<li class="icon-sign-up"><a href="#">Sign In<i class="fas fa-sign-in-alt"></i></a></li>
+					</div>
+				</nav>
+			</div>
+		</div><!--NAVBAR BELOW-->
+	</header>
+	<main id="slide-content">
+		<section class="slideshow">
+			<div class="slideshow-inner">
+				<div class="slides">
+					<div class="slide is-active ">
+						<div class="slide-content">
+							<div class="caption">
+								<div class="title"><p>Sunny Beach</p></div>
+								<div class="text">
+									<p>Create you tour</p>
+								</div> 
+								<a href="#" class="btn">
+									<span class="btn-inner">GET IN TOUCH</span>
+								</a>
+							</div>
+						</div>
+						<div class="image-container"> 
+							<img src="image/beach2.jpg" alt="" class="image" />
+						</div>
+					</div><!--SLIDER ACTIVE-->
+					<div class="slide">
+						<div class="slide-content">
+							<div class="caption">
+								<div class="title"><p>Mountain Adventure</p></div>
+								<div class="text">
+									<p>Build your next holiday trip with us</p>
+								</div> 
+								<a href="#" class="btn">
+									<span class="btn-inner">GET IN TOUCH</span>
+								</a>
+							</div>
+						</div>
+						<div class="image-container">
+							<img src="image/mountain.jpg" alt="" class="image" />
+						</div>
+					</div><!--SLIDER TWO-->
+					<div class="slide">
+						<div class="slide-content">
+							<div class="caption">
+								<div class="title"><p>Great Wall</p></div>
+								<div class="text">
+									<p>A team of a professional travel epperts</p>
+								</div> 
+								<a href="#" class="btn">
+									<span class="btn-inner">GET IN TOUCH</span>
+								</a>
+							</div>
+						</div>
+						<div class="image-container">
+							<img src="image/geat wall.jpg" alt="" class="image" />
+						</div>
+					</div><!--SLIDER THREE-->
+					<div class="slide">
+						<div class="slide-content">
+							<div class="caption">
+								<div class="title"><p>The Steppe Africa</p></div>
+								<div class="text">
+									<p>Enjoy The Best Destinations with our travel agency</p>
+								</div> 
+								<a href="#" class="btn">
+									<span class="btn-inner">GET IN TOUCH</span>
+								</a>
+							</div>
+						</div>
+						<div class="image-container"> 
+							<img src="image/photo-1481436183848-df276738a795.jpg" alt="" class="image" />
+						</div>
+					</div><!--SLIDER FOUR-->
+				</div>
+				<div class="pagination">
+					<div class="item is-active"> 
+						<span class="icon">1</span>
+					</div>
+					<div class="item">
+						<span class="icon">2</span>
+					</div>
+					<div class="item">
+						<span class="icon">3</span>
+					</div>
+					<div class="item">
+						<span class="icon">4</span>
+					</div>
+				</div><!--PAGI SLIDER-->
+			</div> 
+		</section>
+	</main>
+
+	<!-------------------------------------------- EVENT TOUR-------------------------------------------------------->
+	<div id="container-event-tour">
+		<div class="container-img-event-tour container">
+				<div class="event-img wow fadeLeft" data-wow-delay="0.5s" style="visibility: visible; animation-name: fadeInLeft;">
+					<div class="title-event-tour"><p><i class="fas fa-globe-asia"></i>&nbsp;Theyyam India</p></div>
+					<img src="image/event-1.jpg">
+				</div><!--EVENT ONE-->
+			<div class="event-img wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-name: fadeInUp;">
+				<div class="title-event-tour "><p><i class="fas fa-globe-asia"></i>&nbsp;EDM Festival</p></div>
+				<img src="image/event-2.jpg" >
+			</div><!--EVENT TWO-->
+			<div class="event-img wow wow fadeInRight" data-wow-delay="0.5s" style="visibility: visible; animation-name: fadeInRight;">
+				<div class="title-event-tour"><p><i class="fas fa-globe-asia"></i>&nbsp;Holi Holidays</p></div>
+				<img src="image/event-3.jpg" >
+			</div><!--EVENT THREE-->
+			<a href="#">Other Event Tours<span></span></a>
+		</div>
+	</div>
+	<!------------------------------------------------- SlOGAN---------------------------------------------------->
+	<div class="container-sologan container">
+		<h2 class="title-slogan wow slideInDown" style="visibility: visible; animation-name: slideInDown;">Our Services</h2>
+		<div class="sub-title"></div>
+		<div class="container-service container">
+			<div class="article-service ">
+				<div class="container-unit">
+					<div class="unit-left">
+						<div class="box-icon-classic-icon flaticon-big-map-placeholder-outlined-symbol-of-interface"></div>
+					</div>
+					<div class="unit-right">
+						<a>Best Selection</a>
+						<p>Our strict screening process means that you're only seeing the best quality tours.</p>
+					</div>
+				</div>
+			</div>
+			<div class="article-service">
+				<div class="container-unit">
+					<div class="unit-left">
+						<div class="box-icon-classic-icon flaticon-checkmark-verify-interface-symbol-button"></div>
+					</div>
+					<div class="unit-right">
+						<a>Best Price Guarantee</a>
+						<p>Find a lower price? We find you a good and lowest price that suits your finances.</p>
+					</div>
+				</div>
+			</div>
+			<div class="article-service">
+				<div class="container-unit">
+					<div class="unit-left">
+						<div class="box-icon-classic-icon flaticon-shopping-cart-outline-1"></div>
+					</div>
+					<div class="unit-right">
+						<a>Secure Payments</a>
+						<p>We use Braintree, a subsidiary of PayPal, to make payments safe and secure.</p>
+					</div>
+				</div>
+			</div>
+			<div class="article-service">
+				<div class="container-unit">
+					<div class="unit-left">
+						<div class="box-icon-classic-icon flaticon-headphones-audio-symbol"></div>
+					</div>
+					<div class="unit-right">
+						<a>24/7 Support</a>
+						<p>You can always get professional support from our staff 24/7 and ask any question you have.</p>
+					</div>
+				</div>
+			</div>
+			<div class="article-service">
+				<div class="container-unit">
+					<div class="unit-left">
+						<div class="box-icon-classic-icon flaticon-circular-outlined-badge-with-ribbon-recognition-prize-symbol"></div>
+					</div>
+					<div class="unit-right">
+						<a>Wide Variety of Tours</a>
+						<p>We offer a wide variety of personally picked tours with destinations all over the globe.</p>
+					</div>
+				</div>
+			</div>
+			<div class="article-service">
+				<div class="container-unit">
+					<div class="unit-left">
+						<div class="box-icon-classic-icon flaticon-favourites-star-outline-interface-symbol"></div>
+					</div>
+					<div class="unit-right">
+						<a>Handpicked Hotels</a>
+						<p>Our team offers only the best selection of affordable and luxury hotels to our clients.</p>
+					</div>
+				</div>
+			</div>        
+		</div>
+	</div>
+	<!----------------------------------------------------PARALLAX CONTENT-------------------------------------------------------->
+	<section id="container-parallax" class=" bg-default text-center offset-top-50 hero">
+		<div class="layer-black-parallax"></div>
+		<div class="parallax-content section-xl context-dark">
+			<div class="container">
+				<h2 class="heading-2 wow fadeInDown" data-wow-delay="0.5s" style="visibility: visible; animation-name: fadeInDown;"><span class="d-block font-weight-semi-bold ">First class Impressions</span><span class="d-block font-weight-light">are Waiting for You!</span></h2>
+				<p class="text-width-medium text-spacing-75 wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-name: fadeInLeft;">Our agency offers travelers various tours and excursions with destinations all over the world. Browse our website to find your dream tour!
+				</p>
+				<button class="button button--antiman button--text-medium"><i class="button__icon icon icon-plus"></i><span>Book a Tour Now</span></button>
+			</div>
+		</div>
+	</section>
+	<!----------------------------------------------------HOT TOUR-------------------------------------------------------->
+	<div id="container-tour-hot">
+		<div class="container-tour-hot container">
+			<h2 class="title-hot-tour wow slideInDown" style="visibility: visible; animation-name: slideInDown;">Hot Tour</h2>
+			<div class="sub-title"></div>
+			<div class="container-tour-destination wow slideInRight" style="visibility: visible; animation-name: slideInRight;">
+				<div class="big-price-wrap"><span class="big-price">$690</span></div>
+				<div class="container-img-tour-hot"><img src="image/photo-1455620611406-966ca6889d80.jpg" width="100%" height="100%"></div>
+				<div class="container-tour-product">
+					<div class="product-body">
+						<div class="product-big-body">
+							<p class="title-product" >Spain,Benidorm</p>
+							<div class="title-ratting"><p>
+								<i class="fa fa-star fa-1x"></i>
+								<i class="fa fa-star fa-1x"></i>
+								<i class="fa fa-star fa-1x"></i>
+								<i class="fa fa-star fa-1x"></i>
+								<i class="fas fa-star-half-alt"></i>
+							&emsp;4 customer reviews</p>
+						</div>
+						<div class="content-decripstion"><p>Benidorm is a buzzing resort with a big reputation for beach holidays. Situated in sunny Costa Blanca, the town is one of the original Spanish beach resorts...</p>
+						</div>
+						<button class="button button--push button--border-thin ">Buy This Tour</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-tour-destination wow slideInLeft" style="visibility: visible; animation-name: slideInLeft;">
+			<div class="container-img-tour-hot">
+				<div class="big-price-wrap"><span class="big-price">$960</span></div>
+				<img src="image/photo-1532574754390-44dc5c6780bb.jpg" width="100%" height="100%">
+			</div>
+			<div class="container-tour-product">
+				<div class="product-body">
+					<div class="product-big-body">
+						<p class="title-product" >Mauritius Island, Africa</p>
+						<div class="title-ratting"><p>
+
+							<i class="fa fa-star fa-1x"></i>
+							<i class="fa fa-star fa-1x"></i>
+							<i class="fa fa-star fa-1x"></i>
+							<i class="fa fa-star fa-1x"></i>
+							<i class="fas fa-star-half-alt"></i>
+						&emsp;4 customer reviews</p>
+					</div>
+					<div class="content-decripstion"><p>The beautiful and inviting island nation of Mauritius is an ideal ‘flop and drop’ at the conclusion of your safari. Indulge in the delightful scents of the fragrant...</p></div>
+					<button class="button button--push button--border-thin ">Buy This Tour</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<!-------------------------------------------------DISCOUNT TOUR------------------------------------------------------>
+<section class="testimonials">
+	<h2 class="title-discount wow slideInDown" style="visibility: visible; animation-name: slideInDown;">Discount Tour</h2>
+	<div class="sub-title"></div>
+	<div id="customers-testimonials" class="owl-carousel container">
+		<!--TESTIMONIAL 1 -->
+		<div class="item">
+			<div class="shadow-effect">
+				<div class="discount-tour">
+					<div class="discount-tour-item-badeg">69%</div>
+				</div>
+				<img class="img-responsive" src="image/pexels-photo-259772.jpeg" alt="" height="220px">
+				<div class="item-details">
+					<h6>Jewel of the Nile</h6>
+					<p class="title-ratting">
+						<i class="fa fa-star fa-1x"></i>
+						<i class="fa fa-star fa-1x"></i>
+						<i class="fa fa-star fa-1x"></i>
+						<i class="fa fa-star fa-1x"></i>
+						<i class="fas fa-star-half-alt"></i>&emsp;4.8&emsp;165 reviews
+					</p>
+					<p><i class="far fa-calendar-minus"></i>&emsp;16 days from <p class="price-cost">$1,435</p><p class="price-discount">&nbsp;$1,220.</p>
+				</div>
+			</div>
+		</div>
+		<!--TESTIMONIAL 2 -->
+		<div class="item">
+			<div class="shadow-effect">
+				<div class="discount-tour">
+					<div class="discount-tour-item-badeg">96%</div>
+				</div>
+				<img class="img-responsive" src="image/photo-1447678523326-1360892abab8.jpg" alt="" height="220px">
+				<div class="item-details">
+					<h6>Classic Colombia </h6>
+					<p class="title-ratting">
+						<i class="fa fa-star fa-1x"></i>
+						<i class="fa fa-star fa-1x"></i>
+						<i class="fa fa-star fa-1x"></i>
+						<i class="fa fa-star fa-1x"></i>
+						<i class="fas fa-star-half-alt"></i>&emsp;4.8&emsp;75 reviews
+					</p>
+					<p><i class="far fa-calendar-minus"></i>&emsp;12 days from <p class="price-cost">$1,435</p><p class="price-discount">&nbsp;$1,220.</p>
+				</div>
+			</div>
+		</div>
+		<!--TESTIMONIAL 3 -->
+		<div class="item">
+			<div class="shadow-effect">
+				<div class="discount-tour">
+					<div class="discount-tour-item-badeg">31%</div>
+				</div>
+				<img class="img-responsive" src="image/photo-1467307983825-619715426c70.jpg" alt="" height="220px">
+				<div class="item-details">
+					<h6>Great India</h6>
+					<p class="title-ratting">
+						<i class="fa fa-star fa-1x"></i>
+						<i class="fa fa-star fa-1x"></i>
+						<i class="fa fa-star fa-1x"></i>
+						<i class="fa fa-star fa-1x"></i>
+						<i class="fas fa-star-half-alt"></i>&emsp;4.8&emsp;15 reviews
+					</p>
+					<p><i class="far fa-calendar-minus"></i>&emsp;8 days from <p class="price-cost">$1,435</p><p class="price-discount">&nbsp;$1,220.</p>
+				</div>
+			</div>
+		</div>
+		<!--TESTIMONIAL 4 -->
+		<div class="item">
+			<div class="shadow-effect">
+				<div class="discount-tour">
+					<div class="discount-tour-item-badeg">13%</div>
+				</div>
+				<img class="img-responsive" src="image/photo-1467269204594-9661b134dd2b.jpg" alt="" height="220px">
+				<div class="item-details">
+					<h6>Insolite</h6>
+					<p class="title-ratting">
+						<i class="fa fa-star fa-1x"></i>
+						<i class="fa fa-star fa-1x"></i>
+						<i class="fa fa-star fa-1x"></i>
+						<i class="fa fa-star fa-1x"></i>
+						<i class="fas fa-star-half-alt"></i>&emsp;4.8&emsp;65 reviews
+					</p>
+					<p><i class="far fa-calendar-minus"></i>&emsp;9 days from <p class="price-cost">$1,435</p><p class="price-discount">&nbsp;$1,220.</p>
+				</div>
+			</div>
+		</div>
+		<!--TESTIMONIAL 5 -->
+		<div class="item">
+			<div class="shadow-effect">
+				<div class="discount-tour">
+					<div class="discount-tour-item-badeg">20%</div>
+				</div>
+				<img class="img-responsive" src="image/photo-1527577440030-436a36b07401.jpg" alt="" height="220px">
+				<div class="item-details">
+					<h6>Vietnam Experience</h6>
+					<p class="title-ratting">
+						<i class="fa fa-star fa-1x"></i>
+						<i class="fa fa-star fa-1x"></i>
+						<i class="fa fa-star fa-1x"></i>
+						<i class="fa fa-star fa-1x"></i>
+						<i class="fas fa-star-half-alt"></i>&emsp;4.8&emsp;42 reviews
+					</p>
+					<p><i class="far fa-calendar-minus"></i>&emsp;21 days from <p class="price-cost">$1,435</p><p class="price-discount">&nbsp;$1,220.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!----------------------------------------------------PARALLAX EMAIL-------------------------------------------------------->
+<section id="container-parallax-email">
+	<div class="layer-black-parallax-email"></div>
+	<div class="parallax-content section-xl">
+		<h2 class="heading-2 oh wow fadeInDown" data-wow-delay="0.2s" style="visibility: visible; animation-name: fadeInDown;"><span class="d-block font-weight-semi-bold ">Sign Up for 25% Discount</span></h2>
+		<p class="text-spacing-75 wow fadeInRight" data-wow-delay="0.5s" style="visibility: visible; animation-name: fadeInRight;">Want to get an instant discount for your next tour? Leave your email and sign up for our newsletter with 25% off all our offers.
+		</p>
+		<div class="text-center container-text-email">
+			<div class="form-email" >
+				<div class="form-wrap ">
+					<input class="form-input" placeholder="Enter Your E-mail" type="email" name="email" data-constraints="#">
+				</div>
+				<div class="form-button">
+					<button class="button button-primary" type="submit">Subscribe</button>
+				</div>
+			</div>
+		</div>
+	</div>	
+</section>
+<!--------------------------------------------------RECOMMENTDED DESTINATIONS----------------------------------------->
+<div class="container-travel">
+	<h2 class="title-recommended wow fadeInDown" data-wow-delay="0.2s" style="visibility: visible; animation-name: fadeInDown;">Recommended Destinations</h2>
+	<div class="sub-title"></div>
+	<div class="grid-row container">
+		<div class="grid-item">
+			<a class="wrapping-link" href="#"></a>
+			<div class="grid-item-wrapper">
+				<div class="grid-item-container">
+					<div class="grid-image-top rex-ray">
+						<span class="centered project-image-bg rex-ray-image"></span>
+					</div>
+					<div class="grid-item-content">
+						<span class="item-title">Europe</span>
+						<span class="item-category">Infrastructure as Code</span>
+						<span class="item-excerpt">REX-Ray is a container storage orchestration engine enabling persistence fo...</span>
+						<span class="more-info">View Tour <i class="fas fa-long-arrow-alt-right"></i></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="grid-item">
+			<a class="wrapping-link" href="#" target="_blank"></a>	   
+			<div class="grid-item-wrapper">
+				<div class="grid-item-container">
+					<div class="grid-image-top sputnik">
+						<span class="centered project-image-bg sputnik-image"></span>
+					</div>
+					<div class="grid-item-content">
+						<span class="item-title">Egypt</span>
+						<span class="item-category">Developer System</span>
+						<span class="item-excerpt">A developer focused laptop with a pre-installed and fully support Ubuntu im...</span>
+						<span class="more-info">View Tour<i class="fas fa-long-arrow-alt-right"></i></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="grid-item">
+			<a class="wrapping-link" href="#" target="_blank"></a>
+			<div class="grid-item-wrapper">
+				<div class="grid-item-container">
+					<div class="grid-image-top edgex">
+						<span class="centered project-image-bg edgex-image"></span>
+					</div>
+					<div class="grid-item-content">
+						<span class="item-title">Italy</span>
+						<span class="item-category">Internet of Things</span>
+						<span class="item-excerpt">A vendor-neutral open source project building a common open framework for I...</span>
+						<span class="more-info">View Tour <i class="fas fa-long-arrow-alt-right"></i></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="grid-item">
+			<a class="wrapping-link" href="#" target="_blank"></a>
+			<div class="grid-item-wrapper">
+				<div class="grid-item-container">
+					<div class="grid-image-top openswitch">
+						<span class="centered project-image-bg openswitch-image"></span>
+					</div>
+					<div class="grid-item-content">
+						<span class="item-title">Asia</span>
+						<span class="item-category">Software Based Infrastructure</span>
+						<span class="item-excerpt">The OpenSwitch platform is an open source, Linux-based network operating sy...</span>
+						<span class="more-info">View Tour <i class="fas fa-long-arrow-alt-right"></i></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="grid-item">
+			<a class="wrapping-link" href="#" target="_blank"></a>
+			<div class="grid-item-wrapper">
+				<div class="grid-item-container">
+					<div class="grid-image-top scaleio">
+						<span class="centered project-image-bg scaleio-image"></span>
+					</div>
+					<div class="grid-item-content">
+						<span class="item-title">Latin America</span>
+						<span class="item-category">Infrastructure as Code</span>
+						<span class="item-excerpt">Configure Kubernetes resources to consume storage from volumes hosted on Sc...</span>
+						<span class="more-info">View Tour <i class="fas fa-long-arrow-alt-right"></i></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="grid-item">
+			<a class="wrapping-link" href="#"></a>
+			<div class="grid-item-wrapper">
+				<div class="grid-item-container">
+					<div class="grid-image-top csi">
+						<span class="centered project-image-bg csi-image"></span>
+					</div>
+					<div class="grid-item-content">
+						<span class="item-title">USA</span>
+						<span class="item-category">Software Based Infrastructure</span>
+						<span class="item-excerpt">A universal storage interface  allowing easy interoperability between conta...</span>
+						<span class="more-info">View Tour <i class="fas fa-long-arrow-alt-right"></i></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="grid-item">
+			<a class="wrapping-link" href="#"></a>
+			<div class="grid-item-wrapper">
+				<div class="grid-item-container">
+					<div class="grid-image-top kubernetes">
+						<span class="centered project-image-bg kubernetes-image"></span>
+					</div>
+					<div class="grid-item-content">
+						<span class="item-title">Japan</span>
+						<span class="item-category">Software Based Infrastructure</span>
+						<span class="item-excerpt">An open-source system for automating deployment, scaling, and management of...</span>
+						<span class="more-info">View Tour <i class="fas fa-long-arrow-alt-right"></i></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="grid-item">
+			<a class="wrapping-link" href="#" target="_blank"></a>
+			<div class="grid-item-wrapper">
+				<div class="grid-item-container">
+					<div class="grid-image-top grpc">
+						<span class="centered project-image-bg grpc-image"></span>
+					</div>
+					<div class="grid-item-content">
+						<span class="item-title">India</span>
+						<span class="item-category">Tools and Libraries</span>
+						<span class="item-excerpt">A high performance, open source, general-purpose RPC framework.</span>
+						<span class="more-info">View Tour <i class="fas fa-long-arrow-alt-right"></i></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="grid-item">
+			<a class="wrapping-link" href="#"></a>
+			<div class="grid-item-wrapper">
+				<div class="grid-item-container">
+					<div class="grid-image-top envoy">
+						<span class="centered project-image-bg envoy-image"></span>
+					</div>
+					<div class="grid-item-content">
+						<span class="item-title">Australia</span>
+						<span class="item-category">Software Based Infrastructure</span>
+						<span class="item-excerpt">An open source edge and service proxy, from the developers at Lyft.</span>
+						<span class="more-info">View Tour <i class="fas fa-long-arrow-alt-right"></i></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="grid-item">
+			<a class="wrapping-link" href="#"></a>
+			<div class="grid-item-wrapper">
+				<div class="grid-item-container">
+					<div class="grid-image-top istio">
+						<span class="centered project-image-bg istio-image"></span>
+					</div>
+					<div class="grid-item-content">
+						<span class="item-title">Africa</span>
+						<span class="item-category">Software Based Infrastructure</span>
+						<span class="item-excerpt">Connect, secure, control, and observe services.</span>
+						<span class="more-info">View Tour <i class="fas fa-long-arrow-alt-right"></i></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!------------------------------------------------------------FOOTER---------------------------------------------------------->
+<footer class="footer-corporate context-dark">
+	<div class="footer-corporate-inset">
+		<div class="container">
+			<div class="content-footer">
+				<div class="col-sm-6 col-md-12 col-lg-4 col-xl-4 wow fadeInRight" data-wow-delay="0.5s" style="visibility: visible; animation-name: fadeInRight;">
+					<div class="oh-desktop">
+						<h6 class="text-spacing-100 text-uppercase">Contact us</h6>
+						<ul class="footer-contacts">
+							<li>
+								<div class="unit-footer">
+									<div class="unit-left-footer"><span class="icon fa fa-phone"></span></div>
+									<div class="unit-body"><a class="link-phone" href="#">+036-282-3931</a></div>
+								</div>
+							</li>
+							<li>
+								<div class="unit-footer">
+									<div class="unit-left-footer"><span class="icon fa fa-envelope"></span></div>
+									<div class="unit-body"><a class="link-aemail" href="#">info@rocklee.org</a></div>
+								</div>
+							</li>
+							<li>
+								<div class="unit-footer">
+									<div class="unit-left-footer"><span class="icon fa fa-location-arrow"></span></div>
+									<div class="unit-body"><a class="link-location" href="#">TayNguyen University, BuonMaThuot, DakLak.</a></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-5 col-lg-4 col-xl-4 wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-name: fadeInUp;">
+					<div class="oh-desktop">
+						<h6 class="text-spacing-100 text-uppercase">Popular news</h6>
+						<article class="post post-minimal-2">
+							<p class="post-minimal-2-title"><a href="#">Your Personal Guide to 5 Best Places to Visit on Earth</a></p>
+							<div class="post-minimal-2-time">
+								<time datetime="2018-05-04">February 14,2020</time>
+							</div>
+						</article>
+						<article class="post post-minimal-2">
+							<p class="post-minimal-2-title"><a href="#">Top 10 Hotels: Rating by Wonder Tour Travel Experts</a></p>
+							<div class="post-minimal-2-time">
+								<time datetime="2018-05-04"> February 14,2020</time>
+							</div>
+						</article>
+					</div>
+				</div>
+				<div class="col-sm-11 col-md-7 col-lg-4 col-xl-4 wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-name: fadeInLeft;"">
+					<div class="oh-desktop">
+						<h6 class="text-spacing-100">Quick links</h6>
+						<ul class="row-6 list-0 list-marked list-marked-md list-marked-secondary list-custom-2">
+							
+							<li><a href="#">Destinations</a></li>
+							<li><a href="#">Travel Styles</a></li>
+							<li><a href="#">Gallery</a></li>
+							<li><a href="#">Deals</a></li>
+							<li><a href="#">Contact Us</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer><!--FOOTER CONTRACT-->
+<div class="footer-corporate-bottom-panel">
+	<div class="container">
+		<div class=" justfy-content-xl-space-berween content-footer align-items-md-center2">
+			<div class="col-sm-6 col-md-4  text-sm-right text-md-center">
+				<div>
+					<ul class="list-inline list-inline-sm footer-social-list-2">
+						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4 order-sm-first">
+				<p class="rights"><span>©&nbsp;</span><span class="copyright-year">2020</span> <span>Tour Discover</span>. All rights reserved<span>.</span><span> Design&nbsp;by&nbsp;<a href="#">RockLee.</a></span>
+				</p>
+			</div>
+			<div class="col-sm-6 col-md-4 text-md-right">
+				<p class="rights"><a href="#">Privacy Policy</a></p>
+			</div>
+		</div>
+	</div>
+</div><!--FOOTER PANEL-->
+
+</body>
+
+<script>
+	new WOW().init();	
+</script>
+<script  src="jquery/jquery-2.2.2.min.js"></script>
+<script  src="js/script-discount.js"></script>
+<script  src="owlcarousel/js/owl.carousel.min.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script  src="js/script-slider.js"></script>
+<script  src="js/script-toggle.js"></script>
+</html>

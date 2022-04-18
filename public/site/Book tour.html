@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="vn">
+<head>
+	<title>Book tour</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!--MEIDA VIEWPORT-->
+
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<script  src="jquery/jquery-3.4.1.min.js"></script>
+	<link rel="stylesheet" href="owlcarousel/css/owl.carousel.min.css"><!--LIBRARY-->
+
+	<link rel="stylesheet" href="css/style-book-tour.css"><!--CSS-->
+
+	<link rel="stylesheet" href="font/fontawesome-pro-5.12.0-web/css/all.css">
+	<link rel="stylesheet" type="text/css" href="font/font-bigmug-line/font/flaticon.css"><!--FONT-->
+
+	<script  src="js/window-scroll.js"></script><!--WINDOW SCROLL-->
+	
+</head>
+<body>
+	<header>
+		<!----------------------------------------------------------MENU TOGGLE----------------------------------------------->
+		<div id="nav-on">
+			<div class="container-menu-show container">
+				<div class="container-logo col-lg-3">
+					<a href="#">
+						<img src="image/logo.png" height="40px" width="133px">
+					</a>
+				</div>
+				<div class="container-option col-lg-9">
+				</div>
+			</div><!--NAVBAR SHOW-->
+		</div>
+	</header>
+	<!------------------------------------------------------------BOOK TOUR-------------------------------------------------->
+
+	<h2 class="container title-book-tour">12 Days - Vietnam Experience</h2>
+	<div class="container-book container ">
+		<div class="container-book-tour col-8">
+			<div class="col-12 container-title-book-tour">
+				<p class="number-step-book-tour">1</p>
+				<h5 class="title-step-book-tour">Your departure date</h5>
+			</div>
+			<div class="step-book-tour col-12">
+				<div class="col-5 step-book-day">
+					<p class="text-bold-step-book-day">Thursday, March 5, 2020</p>
+					<p class="text-light-step-book-day">to Tuesday, March 10, 2020</p>
+					
+				</div>
+				<div class="col-7 step-book-detail">
+					<div class="step-book-detail-info">
+						<i class="fas fa-check-circle"></i><p>You will only be charged once your space is confirmed.</p>
+					</div>
+					<div class="step-book-detail-info">
+						<i class="fas fa-user"></i><p><strong>Last chance! Only 3 spaces left</strong></br> and yours is reserved for the next 10 minutes</p>
+					</div>
+				</div>
+			</div>
+			<div class="commitment-book-tour">
+				<div class="col-4"><i class="fas fa-check-circle"></i><p>Best price guarantee</p></div>
+				<div class="col-4"><i class="fas fa-check-circle"></i><p>Earn $44 travel credits</p></div>
+				<div class="col-4"><i class="fas fa-check-circle"></i><p>No booking or credit card fees</p></div>
+				
+			</div>
+
+
+			<div class="col-12 container-title-book-tour">
+				<p class="number-step-book-tour">2</p>
+				<h5 class="title-step-book-tour">Add traveller details</h5>
+			</div>
+			<div class="book-numner-travellers">
+				<p class="title-book-numner-number col-4">Number of travellers:</p>
+				<div class="button-number-number">
+					<span class="input-number-decrement">–</span><input class="input-number" type="text" value="1" min="0" max="10"><span class="input-number-increment">+</span>
+				</div>
+			</div>
+			<form class="form-horizontal" action="/action_page.php">
+				<div class="form-group">
+					<label class="control-label col-3" for="pwd">First Name:</label>
+					<div class="col-sm-10 col-lg-9">          
+						<input type="password" class="form-control" id="pwd" placeholder="Enter First Name" name="pwd">
+					</div>
+				</div>				
+				<div class="form-group">
+					<label class="control-label col-3" for="pwd">Last Name:</label>
+					<div class="col-sm-10 col-lg-9 col-lg-9">          
+						<input type="password" class="form-control" id="pwd" placeholder="Enter Last Name" name="pwd">
+					</div>
+				</div>				
+				<div class="form-group">
+					<label class="control-label col-3" for="pwd">Phone Number:</label>
+					<div class="col-sm-10 col-lg-9">          
+						<input type="password" class="form-control" id="pwd" placeholder="Enter Phone Number" name="pwd">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-3" for="email">Email:</label>
+					<div class="col-sm-10 col-lg-9">
+						<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-3" for="pwd">Address:</label>
+					<div class="col-sm-10 col-lg-9">          
+						<input type="password" class="form-control" id="pwd" placeholder="Enter Address" name="pwd">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-3" for="pwd">Gender:</label>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input" value="">Male
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input" value="">Female
+						</label>
+					</div>		
+				</div>		
+				<div class="form-group">
+					<label class="control-label col-3" for="pwd">Country:</label>
+					<div class="col-sm-10 col-lg-9">          
+						<input type="password" class="form-control" id="pwd" placeholder="Enter Country" name="pwd">
+					</div>
+				</div>
+			</form>
+			<div class="col-12 container-title-book-tour">
+				<p class="number-step-book-tour">3</p>
+				<h5 class="title-step-book-tour">Add payment details</h5>
+			</div>
+			<div class="wrapper" id="app">
+				<div class="card-form">
+					<div class="card-list">
+						<div class="card-item" v-bind:class="{ '-active' : isCardFlipped }">
+							<div class="card-item__side -front">
+								<div class="card-item__focus" v-bind:class="{'-active' : focusElementStyle }" v-bind:style="focusElementStyle" ref="focusElement"></div>
+								<div class="card-item__cover">
+									<img v-bind:src="'https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/' + currentCardBackground + '.jpeg'" class="card-item__bg">
+								</div>
+
+								<div class="card-item__wrapper">
+									<div class="card-item__top">
+										<img src="image/chip.png" class="card-item__chip">
+										<div class="card-item__type">
+											<transition name="slide-fade-up">
+												<img v-bind:src="'https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/' + getCardType + '.png'" v-if="getCardType" v-bind:key="getCardType" alt="" class="card-item__typeImg">
+											</transition>
+										</div>
+									</div>
+									<label for="cardNumber" class="card-item__number" ref="cardNumber">
+										<template v-if="getCardType === 'amex'">
+											<span v-for="(n, $index) in amexCardMask" :key="$index">
+												<transition name="slide-fade-up">
+													<div
+													class="card-item__numberItem"
+													v-if="$index > 4 && $index < 14 && cardNumber.length > $index && n.trim() !== ''"
+													>*</div>
+													<div class="card-item__numberItem"
+													:class="{ '-active' : n.trim() === '' }"
+													:key="$index" v-else-if="cardNumber.length > $index">
+													{{cardNumber[$index]}}
+												</div>
+												<div
+												class="card-item__numberItem"
+												:class="{ '-active' : n.trim() === '' }"
+												v-else
+												:key="$index + 1"
+												>{{n}}</div>
+											</transition>
+										</span>
+									</template>
+
+									<template v-else>
+										<span v-for="(n, $index) in otherCardMask" :key="$index">
+											<transition name="slide-fade-up">
+												<div
+												class="card-item__numberItem"
+												v-if="$index > 4 && $index < 15 && cardNumber.length > $index && n.trim() !== ''"
+												>*</div>
+												<div class="card-item__numberItem"
+												:class="{ '-active' : n.trim() === '' }"
+												:key="$index" v-else-if="cardNumber.length > $index">
+												{{cardNumber[$index]}}
+											</div>
+											<div
+											class="card-item__numberItem"
+											:class="{ '-active' : n.trim() === '' }"
+											v-else
+											:key="$index + 1"
+											>{{n}}</div>
+										</transition>
+									</span>
+								</template>
+							</label>
+							<div class="card-item__content">
+								<label for="cardName" class="card-item__info" ref="cardName">
+									<div class="card-item__holder">Card Holder</div>
+									<transition name="slide-fade-up">
+										<div class="card-item__name" v-if="cardName.length" key="1">
+											<transition-group name="slide-fade-right">
+												<span class="card-item__nameItem" v-for="(n, $index) in cardName.replace(/\s\s+/g, ' ')" v-if="$index === $index" v-bind:key="$index + 1">{{n}}</span>
+											</transition-group>
+										</div>
+										<div class="card-item__name" v-else key="2">Full Name</div>
+									</transition>
+								</label>
+								<div class="card-item__date" ref="cardDate">
+									<label for="cardMonth" class="card-item__dateTitle">Expires</label>
+									<label for="cardMonth" class="card-item__dateItem">
+										<transition name="slide-fade-up">
+											<span v-if="cardMonth" v-bind:key="cardMonth">{{cardMonth}}</span>
+											<span v-else key="2">MM</span>
+										</transition>
+									</label>
+									/
+									<label for="cardYear" class="card-item__dateItem">
+										<transition name="slide-fade-up">
+											<span v-if="cardYear" v-bind:key="cardYear">{{String(cardYear).slice(2,4)}}</span>
+											<span v-else key="2">YY</span>
+										</transition>
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-item__side -back">
+						<div class="card-item__cover">
+							<img
+							v-bind:src="'https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/' + currentCardBackground + '.jpeg'" class="card-item__bg">
+						</div>
+						<div class="card-item__band"></div>
+						<div class="card-item__cvv">
+							<div class="card-item__cvvTitle">CVV</div>
+							<div class="card-item__cvvBand">
+								<span v-for="(n, $index) in cardCvv" :key="$index">
+									*
+								</span>
+
+							</div>
+							<div class="card-item__type">
+								<img v-bind:src="'https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/' + getCardType + '.png'" v-if="getCardType" class="card-item__typeImg">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card-form__inner">
+				<div class="card-input">
+					<label for="cardNumber" class="card-input__label">Card Number</label>
+					<input type="text" id="cardNumber" class="card-input__input" v-mask="generateCardNumberMask" v-model="cardNumber" v-on:focus="focusInput" v-on:blur="blurInput" data-ref="cardNumber" autocomplete="off">
+				</div>
+				<div class="card-input">
+					<label for="cardName" class="card-input__label">Card Holders</label>
+					<input type="text" id="cardName" class="card-input__input" v-model="cardName" v-on:focus="focusInput" v-on:blur="blurInput" data-ref="cardName" autocomplete="off">
+				</div>
+				<div class="card-form__row">
+					<div class="card-form__col">
+						<div class="card-form__group">
+							<label for="cardMonth" class="card-input__label">Expiration Date</label>
+							<select class="card-input__input -select" id="cardMonth" v-model="cardMonth" v-on:focus="focusInput" v-on:blur="blurInput" data-ref="cardDate">
+								<option value="" disabled selected>Month</option>
+								<option v-bind:value="n < 10 ? '0' + n : n" v-for="n in 12" v-bind:disabled="n < minCardMonth" v-bind:key="n">
+									{{n < 10 ? '0' + n : n}}
+								</option>
+							</select>
+							<select class="card-input__input -select" id="cardYear" v-model="cardYear" v-on:focus="focusInput" v-on:blur="blurInput" data-ref="cardDate">
+								<option value="" disabled selected>Year</option>
+								<option v-bind:value="$index + minCardYear" v-for="(n, $index) in 12" v-bind:key="n">
+									{{$index + minCardYear}}
+								</option>
+							</select>
+						</div>
+					</div>
+					<div class="card-form__col -cvv">
+						<div class="card-input">
+							<label for="cardCvv" class="card-input__label">CVV</label>
+							<input type="text" class="card-input__input" id="cardCvv" v-mask="'####'" maxlength="4" v-model="cardCvv" v-on:focus="flipCard(true)" v-on:blur="flipCard(false)" autocomplete="off">
+						</div>
+					</div>
+				</div>
+				<div class="container-terms-policies">
+					<input type="checkbox" class="form-check-input" value="">
+					<p class="text-terms-policies">I accept Tour Discover Terms & Conditions and Privacy Policy and Arctic Adventures's payment cancellation and refund conditions.</p>
+				</div>
+				<button class="card-form__button">
+					Submit
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-book-tour-card col-3">
+	<h5>My trip</h5>
+	<p class="text-bold-book-tour-card">12 Days - Vietnam Experience</p>
+	<hr>
+	<p class="text-bold-book-tour-card">Starts in Reykjavik, Iceland</p>
+	<p>Thursday, 5 March 2020</p>
+	<p class="text-bold-book-tour-card">Ends in Reykjavik, Iceland</p>
+	<p>Tuesday, 10 March 2020</p>
+	<p class="text-bold-book-tour-card">What's included</p>
+	<p>Accommodation, Guide, Meals, Transport</p>
+	<hr>
+	<p class="text-bold-book-tour-card">Number of travellers:</p>
+	<div class="container-pay-tour">
+		<div class="button-number-number">
+			<span class="input-number-decrement">–</span><input class="input-number" type="text" value="1" min="0" max="10"><span class="input-number-increment">+</span>
+		</div>
+		<p class="text-bold-book-tour-card price-text">$ 1,483.02</p>
+		<button class="btn btn-success">
+					USD $1,483.02
+				</button>
+	</div>
+</div>
+</div>
+
+
+<!-----------------------------------------------------FOOTER---------------------------------------------------------->
+<footer class="footer-corporate context-dark">
+	<div class="footer-corporate-inset">
+		<div class="container">
+			<div class="content-footer">
+				<div class="col-sm-6 col-md-12 col-lg-4 col-xl-4">
+					<div class="oh-desktop">
+						<h6 class="text-spacing-100 text-uppercase">Contact us</h6>
+						<ul class="footer-contacts">
+							<li>
+								<div class="unit-footer">
+									<div class="unit-left-footer"><span class="icon fa fa-phone"></span></div>
+									<div class="unit-body"><a class="link-phone" href="#">+036-282-3931</a></div>
+								</div>
+							</li>
+							<li>
+								<div class="unit-footer">
+									<div class="unit-left-footer"><span class="icon fa fa-envelope"></span></div>
+									<div class="unit-body"><a class="link-aemail" href="#">info@rocklee.org</a></div>
+								</div>
+							</li>
+							<li>
+								<div class="unit-footer">
+									<div class="unit-left-footer"><span class="icon fa fa-location-arrow"></span></div>
+									<div class="unit-body"><a class="link-location" href="#">TayNguyen University, BuonMaThuot, DakLak.</a></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-5 col-lg-4 col-xl-4">
+					<div class="oh-desktop">
+						<h6 class="text-spacing-100 text-uppercase">Popular news</h6>
+						<article class="post post-minimal-2">
+							<p class="post-minimal-2-title"><a href="#">Your Personal Guide to 5 Best Places to Visit on Earth</a></p>
+							<div class="post-minimal-2-time">
+								<time datetime="2018-05-04">February 14,2020</time>
+							</div>
+						</article>
+						<article class="post post-minimal-2">
+							<p class="post-minimal-2-title"><a href="#">Top 10 Hotels: Rating by Wonder Tour Travel Experts</a></p>
+							<div class="post-minimal-2-time">
+								<time datetime="2018-05-04"> February 14,2020</time>
+							</div>
+						</article>
+					</div>
+				</div>
+				<div class="col-sm-11 col-md-7 col-lg-4 col-xl-4">
+					<div class="oh-desktop">
+						<h6 class="text-spacing-100">Quick links</h6>
+						<ul class="row-6 list-0 list-marked list-marked-md list-marked-secondary list-custom-2">
+							<li><a href="#">Destinations</a></li>
+							<li><a href="#">Travel Styles</a></li>
+							<li><a href="#">Gallery</a></li>
+							<li><a href="#">Deals</a></li>
+							<li><a href="#">Contact Us</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer><!--FOOTER CONTRACT-->
+<div class="footer-corporate-bottom-panel">
+	<div class="container">
+		<div class=" justfy-content-xl-space-berween content-footer align-items-md-center2">
+			<div class="col-sm-6 col-md-4  text-sm-right text-md-center">
+				<div>
+					<ul class="list-inline list-inline-sm footer-social-list-2">
+						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4 order-sm-first">
+				<p class="rights"><span>©&nbsp;</span><span class="copyright-year">2020</span> <span>Tour Discover</span>. All rights reserved<span>.</span><span> Design&nbsp;by&nbsp;<a href="#">RockLee.</a></span>
+				</p>
+			</div>
+			<div class="col-sm-6 col-md-4 text-md-right">
+				<p class="rights"><a href="#">Privacy Policy</a></p>
+			</div>
+		</div>
+	</div>
+
+</div><!--FOOTER PANEL-->
+
+</body>
+<script src='js/vue.min.js'></script>
+<script src='js/vue-the-mask.js'></script><script  src="./script.js"></script>
+
+<script  src="jquery/jquery-2.2.2.min.js"></script>
+<script  src="js/script-booktour.js"></script>
+<script  src="owlcarousel/js/owl.carousel.min.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script  src="js/script-slider.js"></script>
+<script  src="js/script-toggle.js"></script>
+</html>

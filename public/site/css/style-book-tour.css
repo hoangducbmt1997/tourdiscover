@@ -1,0 +1,578 @@
+/*----------------------------------------------------BOOK TOUR-------------------------------------------------------------*/
+.title-book-tour {
+	font-weight: bold;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.container-book {
+	display: flex;
+}
+
+.container-book-tour-card {
+	display: flex;
+	box-shadow: 0 0 1px 1px rgba(0, 0, 0, .1);
+	flex-direction: column;
+	margin-left: 30px;
+	margin-bottom: 10px;
+	height: 100%;
+}
+
+.container-book-tour-card h5 {
+	font-weight: bold;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+.container-book-tour-card .price-text {
+	padding-top: 10px;
+}
+
+.container-pay-tour {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.container-pay-tour button {
+	width: 100%;
+}
+
+.text-bold-book-tour-card {
+	font-weight: bold;
+}
+
+.container-book-tour-card p {
+	font-size: 14px;
+}
+
+.container-book-tour {
+	box-shadow: 0 0 1px 1px rgba(0, 0, 0, .1);
+	margin-bottom: 30px;
+}
+
+.container-title-book-tour {
+	display: flex;
+	align-items: center;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.title-step-book-tour {
+	font-weight: bold;
+	margin-left: 20px;
+	padding-bottom: 10px;
+}
+
+.step-book-tour {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	display: flex;
+	box-sizing: border-box;
+	align-items: center;
+}
+
+.number-step-book-tour {
+	height: 40px;
+	width: 40px;
+	border: 3px solid #01B3A7;
+	display: flex;
+	align-items: center;
+	padding-left: 15px;
+	font-weight: bold;
+	border-radius: 50%;
+}
+
+.step-book-day {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.step-book-detail {
+	display: flex;
+	flex-direction: column;
+}
+
+.step-book-detail-info {
+	display: flex;
+}
+
+.step-book-detail-info p {
+	margin: 0px;
+	padding: 10px;
+	font-size: 14px;
+}
+
+.step-book-detail-info i {
+	padding-top: 13px;
+}
+
+.step-book-tour .col-7 {
+	border-left: 1px solid rgba(0, 0, 0, .1);
+}
+
+.step-book-day p {
+	margin: 0;
+}
+
+.text-bold-step-book-day {
+	font-weight: bold;
+}
+
+.text-light-step-book-day {
+	font-size: 14px;
+}
+
+.commitment-book-tour {
+	display: flex;
+	align-items: center;
+}
+
+.commitment-book-tour [class*=col-] {
+	display: flex;
+	font-size: 14px;
+	padding-top: 20px;
+}
+
+.commitment-book-tour i {
+	padding-top: 3px;
+	padding-right: 5px;
+	color: #01B3A7;
+}
+
+.step-book-detail-info .fa-check-circle {
+	color: #96bc34;
+}
+
+.step-book-detail-info .fa-user {
+	color: #f39a2d;
+}
+
+.form-horizontal ::placeholder {
+	font-size: 14px;
+}
+
+.input-number {
+	width: 80px;
+	padding: 0 12px;
+	vertical-align: top;
+	text-align: center;
+	outline: none;
+}
+
+.input-number, .input-number-decrement, .input-number-increment {
+	border: 1px solid #ccc;
+	height: 40px;
+	user-select: none;
+}
+
+.input-number-decrement, .input-number-increment {
+	display: inline-block;
+	width: 30px;
+	line-height: 38px;
+	background: #f1f1f1;
+	color: #444;
+	text-align: center;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.input-number-decrement:active, .input-number-increment:active {
+	background: #ddd;
+}
+
+.input-number-decrement {
+	border-right: none;
+	border-radius: 4px 0 0 4px;
+}
+
+.input-number-increment {
+	border-left: none;
+	border-radius: 0 4px 4px 0;
+}
+
+.book-numner-travellers {
+	display: flex;
+	align-items: center;
+}
+
+.book-numner-travellers p {
+	font-weight: bold;
+}
+
+.book-numner-travellers .button-number-number {
+	margin-left: 30px;
+}
+
+.form-horizontal {
+	margin-top: 30px;
+	padding-bottom: 30px;
+}
+
+.form-horizontal input {
+	border-radius: 0px;
+	border: 1px solid rgba(0, 0, 0, .1)
+}
+
+.form-group {
+	display: flex;
+}
+
+.control-label {
+	font-weight: bold;
+}
+
+.form-check-label {
+	margin-left: 20px;
+}
+
+.container-book-tour-card .btn-success {
+	width: 100%;
+	background-color: #01B3A7;
+	border: none;
+	height: 40px;
+	margin-bottom: 20px;
+}
+
+* /*-------------------- PAYMENT CARD--------------------*/ 
+.checkout-card .btn {
+	display: block;
+	background: #bded7d;
+	color: white;
+	text-decoration: none;
+	margin: 20px 0;
+	padding: 15px 15px;
+	border-radius: 1px;
+	position: relative;
+}
+
+.checkout-card .btn::after {
+	content: '';
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+	box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0), 0 3px 3px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+}
+
+.checkout-card .btn:hover::after {
+	background: rgba(0, 0, 0, 0.1);
+	box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*--------------------
+Form
+--------------------*/
+.checkout-card .form fieldset {
+	border: none;
+	padding: 0;
+	padding: 10px 0;
+	position: relative;
+	clear: both;
+}
+
+.checkout-card .form fieldset.fieldset-expiration {
+	float: left;
+	width: 60%;
+}
+
+.checkout-card .form fieldset.fieldset-expiration .select {
+	width: 84px;
+	margin-right: 12px;
+	float: left;
+}
+
+.checkout-card .form fieldset.fieldset-ccv {
+	clear: none;
+	float: right;
+	width: 86px;
+}
+
+.checkout-card .form fieldset label {
+	display: block;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: rgba(0, 0, 0, 1);
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+.checkout-card .form fieldset input, .checkout-card .form fieldset .select
+	{
+	width: 100%;
+	height: 38px;
+	color: #333333;
+	padding: 10px;
+	border-radius: 1px;
+	font-size: 15px;
+	outline: none !important;
+	border: 1px solid rgba(0, 0, 0, .1);
+	box-shadow: inset 0 1px 4px rgba(212, 212, 212, 0.2);
+}
+
+.checkout-card .form fieldset input.input-cart-number, .checkout-card .form fieldset .select.input-cart-number
+	{
+	width: 82px;
+	display: inline-block;
+	margin-right: 8px;
+}
+
+.checkout-card .form fieldset input.input-cart-number:last-child,
+	.checkout-card .form fieldset .select.input-cart-number:last-child {
+	margin-right: 0;
+}
+
+.checkout-card .form fieldset .select {
+	position: relative;
+}
+
+.checkout-card .form fieldset .select::after {
+	content: '';
+	border-top: 8px solid #222;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	position: absolute;
+	z-index: 2;
+	top: 14px;
+	right: 10px;
+	pointer-events: none;
+}
+
+.checkout-card .form fieldset .select select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	padding: 0;
+	border: none;
+	width: 100%;
+	outline: none !important;
+	background: none;
+	position: absolute;
+	bottom:5px;
+	padding-left: 15px;
+}
+
+.checkout-card .form fieldset .select select :-moz-focusring {
+	color: transparent;
+	text-shadow: 0 0 0 #000;
+}
+
+.checkout-card .form button {
+	width: 100%;
+	outline: none !important;
+	background: -webkit-gradient(linear, left top, left bottom, from(#49a09b),
+		to(#3d8291));
+	background: linear-gradient(180deg, #49a09b, #3d8291);
+	text-transform: uppercase;
+	font-weight: bold;
+	border: none;
+	box-shadow: none;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+	margin-top: 90px;
+}
+
+.form button .fa {
+	margin-right: 6px;
+}
+
+/*--------------------
+checkout-card
+--------------------*/
+.checkout-card {
+	margin: 150px auto 30px;
+	position: relative;
+	width: 460px;
+	background: white;
+	padding: 160px 45px 30px;
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+/*--------------------
+Credit Card
+--------------------*/
+.credit-card-box {
+	-webkit-perspective: 1000;
+	perspective: 1000;
+	width: 400px;
+	height: 280px;
+	position: absolute;
+	top: -112px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.credit-card-box:hover .flip, .credit-card-box.hover .flip {
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.credit-card-box .front, .credit-card-box .back {
+	width: 400px;
+	height: 250px;
+	border-radius: 15px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	background: linear-gradient(135deg, #ece3e4, #223253);
+	position: absolute;
+	color: #fff;
+	top: 0;
+	left: 0;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+.credit-card-box .front::before, .credit-card-box .back::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: url("../image/19.jpeg") no-repeat
+		center;
+	background-size: cover;
+	opacity: .2;
+}
+
+.credit-card-box .flip {
+	-webkit-transition: 0.6s;
+	transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+.credit-card-box .logo {
+	position: absolute;
+	top: 9px;
+	right: 20px;
+	width: 60px;
+}
+
+.credit-card-box .logo svg {
+	width: 100%;
+	height: auto;
+	fill: #fff;
+}
+
+.credit-card-box .front {
+	z-index: 2;
+	-webkit-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+}
+
+.credit-card-box .back {
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.credit-card-box .back .logo {
+	top: 185px;
+}
+
+.credit-card-box .chip {
+	position: absolute;
+	width: 60px;
+	height: 45px;
+	top: 20px;
+	left: 20px;
+	background: linear-gradient(135deg, #ddccf0 0%, #d1e9f5 44%, #f8ece7 100%);
+	border-radius: 8px;
+}
+
+.credit-card-box .chip::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	border: 4px solid rgba(128, 128, 128, 0.1);
+	width: 80%;
+	height: 70%;
+	border-radius: 5px;
+}
+
+.credit-card-box .strip {
+	background: linear-gradient(135deg, #404040, #1a1a1a);
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	top: 30px;
+	left: 0;
+}
+
+.credit-card-box .number {
+	position: absolute;
+	margin: 0 auto;
+	top: 103px;
+	left: 19px;
+	font-size: 38px;
+}
+
+.credit-card-box label {
+	font-size: 10px;
+	letter-spacing: 1px;
+	text-shadow: none;
+	text-transform: uppercase;
+	font-weight: normal;
+	opacity: 0.5;
+	display: block;
+	margin-bottom: 3px;
+}
+
+.credit-card-box .card-holder, .credit-card-box .card-expiration-date {
+	position: absolute;
+	margin: 0 auto;
+	top: 180px;
+	left: 19px;
+	font-size: 22px;
+	text-transform: capitalize;
+}
+
+.credit-card-box .card-expiration-date {
+	text-align: right;
+	left: auto;
+	right: 20px;
+}
+
+.credit-card-box .ccv {
+	height: 36px;
+	background: #fff;
+	width: 91%;
+	border-radius: 5px;
+	top: 110px;
+	left: 0;
+	right: 0;
+	position: absolute;
+	margin: 0 auto;
+	color: #000;
+	text-align: right;
+	padding: 10px;
+}
+
+.credit-card-box .ccv label {
+	margin: -25px 0 14px;
+	color: #fff;
+}
+
+.the-most {
+	position: fixed;
+	z-index: 1;
+	bottom: 0;
+	left: 0;
+	width: 50vw;
+	max-width: 200px;
+	padding: 10px;
+}
+
+.the-most img {
+	max-width: 100%;
+}

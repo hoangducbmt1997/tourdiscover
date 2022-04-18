@@ -1,0 +1,258 @@
+/*----------------------------- FORM REGISTER-----------------------*/
+
+.position-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+.signup-content {
+	padding: 75px 0;
+	display: flex;
+}
+
+.signup-form, .signup-image {
+	width: 50%;
+	overflow: hidden;
+}
+
+.signup-image {
+	margin: 0 55px;
+}
+
+.form-title {
+	margin-bottom: 33px;
+	font-weight: bold;
+}
+
+.signup-image {
+	margin-top: 45px;
+}
+
+.main-register figure {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.main-register .form-submit {
+	display: inline-block;
+	background: #01b3a7;
+	color: #fff;
+	border-bottom: none;
+	width: auto;
+	padding: 15px 39px;
+	cursor: pointer;
+}
+
+.main-register .form-submit:hover, .main-login .form-submit:hover {
+	background: #03DBCC;
+}
+
+.signup-image-link {
+	font-size: 14px;
+	color: #222;
+	display: block;
+	text-align: center;
+}
+
+.term-service {
+	font-size: 16px;
+	color: #01b3a7;
+}
+
+.signup-form {
+	margin-left: 75px;
+	margin-right: 75px;
+	padding-left: 34px;
+}
+
+.register-form {
+	width: 100%;
+}
+
+.main-register .form-group {
+	position: relative;
+	margin-bottom: 25px;
+	overflow: hidden;
+}
+
+.main-register .form-group:last-child {
+	margin-bottom: 0px;
+	width: 100%;
+}
+
+.main-register .form-group i {
+	margin-left: 2px;
+	color: #545556;
+	font-size: 14px;
+}
+
+.main-register input, .main-login input {
+	width: 100%;
+	display: block;
+	border: none;
+	border-bottom: 1px solid #999;
+	padding: 6px 30px;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+
+.main-register input[type=checkbox]:not(old), .main-login input[type=checkbox]:not(old) {
+	width: 2em;
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+	display: none;
+}
+
+.main-register input[type=checkbox]:not(old)+label, .main-login input[type=checkbox]:not(old)+label {
+	display: inline-block;
+	line-height: 1.5em;
+	margin-top: 6px;
+}
+
+.agree-term-title {
+	margin-left: 20px;
+}
+
+.main-register input[type=checkbox]:not(old)+label>span, .main-login input[type=checkbox]:not(old)+label>span {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	margin-bottom: 4px;
+	border: 1px solid #999;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-o-border-radius: 2px;
+	-ms-border-radius: 2px;
+	background: white;
+	background-image: -moz-linear-gradient(white, white);
+	background-image: -ms-linear-gradient(white, white);
+	background-image: -o-linear-gradient(white, white);
+	background-image: -webkit-linear-gradient(white, white);
+	background-image: linear-gradient(white, white);
+	vertical-align: bottom;
+}
+
+.main-register input[type=checkbox]:not(old):checked+label>span:before, .main-login input[type=checkbox]:not(old):checked+label>span:before {
+	content: '\f26b';
+	display: block;
+	color: #222;
+	font-size: 11px;
+	line-height: 1.5;
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Material-Design-Iconic-Font';
+}
+
+.main-register .agree-term {
+	display: inline-block;
+	width: auto;
+}
+
+.main-register label {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #222;
+}
+
+.main-register .label-has-error {
+	top: 22%;
+}
+
+.main-register label.error {
+	position: relative;
+	background: url("../images/unchecked.gif") no-repeat;
+	background-position-y: 3px;
+	padding-left: 20px;
+	display: block;
+	margin-top: 20px;
+}
+
+.main-register label.valid, .main-login label.valid {
+	display: block;
+	position: absolute;
+	right: 0;
+	left: auto;
+	margin-top: -6px;
+	width: 20px;
+	height: 20px;
+	background: transparent;
+}
+
+.main-register label.valid:after, .main-login label.valid:after {
+	content: '\f269';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	font-size: 16px;
+	color: green;
+}
+
+.main-register .label-agree-term {
+	position: relative;
+	top: 0%;
+	transform: translateY(0);
+	-moz-transform: translateY(0);
+	-webkit-transform: translateY(0);
+	-o-transform: translateY(0);
+	-ms-transform: translateY(0);
+}
+
+.material-icons-name {
+	font-size: 18px;
+}
+
+.signin-content {
+	padding-top: 67px;
+	padding-bottom: 87px;
+	display: flex;
+}
+
+.signin-image {
+	display: flex;
+	flex-direction: column;
+}
+
+.signin-image img {
+	margin: 0 auto;
+}
+
+.main-login label i{
+	color:#545556;
+	position: relative;
+	font-size: 14px;
+	
+}
+.content-signin-form{
+	width: 70%;
+}
+.main-login .form-submit {
+	background: #01b3a7;
+	color: #fff;
+	border-bottom: none;
+	padding: 15px 15px;
+	cursor: pointer;
+	width: 160px;
+	margin-top: 50px;
+}
+.main-login label {
+	margin-top: 8px;
+	position: absolute;
+}
+.register-success{
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+.register-success p{
+	padding-top: 50px;
+}
